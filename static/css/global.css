@@ -5,6 +5,7 @@
   font-family: "Fira Code", monospace, sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  box-sizing: border-box;
 
   background-color: var(--bg);
   color: var(--fg);
@@ -41,11 +42,11 @@ header div {
   border-radius: 10rem;
 }
 
-header nav {
+#menu {
   padding-right: 1rem;
 }
 
-header nav a {
+#menu a {
   color: var(--fg);
   padding: 0.4rem 1rem;
   margin: 0 0.2rem;
@@ -53,9 +54,67 @@ header nav a {
   border-radius: 1rem;
 }
 
-header nav a:hover {
+#menu a:hover {
   text-decoration: underline;
 }
 
+#hamburger-lines,
+#menu-toggle {
+  display: none;
+}
+
 /* Fold Navbar into a hamburger menu on smaller screens */
-@media (max-width: 950px);
+@media (max-width: 950px) {
+  #hamburger-lines,
+  #menu-toggle {
+    height: 2rem;
+    width: 3rem;
+  }
+
+  #menu-toggle {
+    display: block;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+  }
+
+  #hamburger-lines {
+    display: block;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .line {
+    display: block;
+    height: 0.3rem;
+    width: 100%;
+    border-radius: 10px;
+    background: var(--fg);
+  }
+
+  /* make move in from the left */
+  #menu {
+    display: none;
+    /* transform: translate(-150%); */
+    /* transition: transform 0.5s ease-in-out; */
+    /* text-align: center; */
+    /* height: 100%; */
+    /* width: 100%; */
+    text-decoration: none;
+    background-color: var(--bg);
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  }
+
+  input[type="checkbox"]:checked ~ #menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 1px;
+    /* transform: translateX(0); */
+  }
+}
