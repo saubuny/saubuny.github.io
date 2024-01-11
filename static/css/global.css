@@ -56,3 +56,6 @@ header nav a {
 header nav a:hover {
   text-decoration: underline;
 }
+
+/* Fold Navbar into a hamburger menu on smaller screens */
+@media (max-width: 950px);

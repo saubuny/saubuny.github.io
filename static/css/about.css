@@ -1,1 +1,30 @@
 @import url("global.css");
+
+/* Use grid */
+
+#container {
+  margin: 0px 6rem;
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 4rem 10rem;
+}
+
+#container h1 {
+  font-size: 52px;
+  border-bottom: 1px dashed var(--fg);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+figcaption {
+  font-size: small;
+  text-align: center;
+}
+
+/* make the layout turn into a continuous list for smaller screens */
+/* have container stay in the center of the screen for wider screens (not a set 6rem margin) */

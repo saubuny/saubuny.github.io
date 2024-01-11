@@ -1,5 +1,7 @@
 @import url("global.css");
 
+/* TODO: reformat the html page */
+
 section {
   margin: 0px 6rem;
   height: 60vh;
@@ -16,6 +18,3 @@ section h1 {
   text-align: center;
   margin-bottom: 1rem;
 }
-
-/* section p { */
-/* } */
