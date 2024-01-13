@@ -102,20 +102,16 @@ header div {
     text-align: center;
     text-decoration: none;
     background-color: var(--bg);
-    margin: 0;
-    padding: 1rem;
+		border: 1px solid (--fg);
   }
 
   #menu a {
     font-size: xx-large;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
 
   input[type="checkbox"]:checked ~ #menu {
     display: flex;
     flex-direction: column;
-
-    border: 2px solid var(--bg3);
 
     /* Centers across screen */
     position: fixed;
