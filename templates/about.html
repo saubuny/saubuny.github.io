@@ -1,58 +1,32 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="static/images/cat.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>about</title>
-    <link rel="stylesheet" href="static/css/about.css" />
-  </head>
-  <body>
-    <header>
-      <div>
-        <img
-          src="static/images/cat.png"
-          alt="stupid cat"
-          id="profile-picture"
-        />
-        <h1>saubuny</h1>
-      </div>
-      <nav>
-        <a href="/">home</a>
-        <a href="/about">about</a>
-        <a href="/projects">projects</a>
-        <a href="/music">music</a>
-      </nav>
-    </header>
-    <div id="container">
-      <section class="info">
-        <h1>about me</h1>
-        <ul>
-          <li>age: 18</li>
-          <li>cats: i have three of them</li>
-          <li>languages: c, javascript, python, php</li>
-          <li>preferred os: arch linux</li>
-        </ul>
-      </section>
-      <figure id="rice">
-        <img src="static/images/cat.png" alt="my cat" />
-        <figcaption>my cat</figcaption>
-      </figure>
-      <figure id="rice">
-        <img src="static/images/rice.png" alt="arch" />
-        <figcaption>
-          i'm still new to this i apologize if my setup is violently repulsive
-        </figcaption>
-      </figure>
-      <section class="info">
-        <h1>my arch rice</h1>
-        <ul>
-          <li>age: 18</li>
-          <li>cats: i have three of them</li>
-          <li>languages: c, javascript, python, php</li>
-          <li>preferred os: arch linux</li>
-        </ul>
-      </section>
-    </div>
-  </body>
-</html>
+{% extends 'base.html' %} {% block title %} home {% endblock %} {% block content
+%}
+<section class="info">
+  <h1>about me</h1>
+  <ul>
+    <li>age: 18</li>
+    <li>cats: i have three of them</li>
+    <li>languages: c, javascript, php</li>
+    <li>preferred os: arch linux</li>
+  </ul>
+</section>
+<figure id="rice">
+  <img src="static/images/cat.png" alt="my cat" />
+  <figcaption>my cat</figcaption>
+</figure>
+<figure id="rice">
+  <img src="static/images/rice.png" alt="arch" />
+  <figcaption>
+    i'm still new to this i apologize if my setup is violently repulsive
+  </figcaption>
+</figure>
+<section class="info">
+  <h1>my arch rice</h1>
+  <ul>
+    <li>age: 18</li>
+    <li>cats: i have three of them</li>
+    <li>languages: c, javascript, python, php</li>
+    <li>preferred os: arch linux</li>
+  </ul>
+</section>
+
+{% endblock %}

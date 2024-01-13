@@ -97,24 +97,25 @@ header div {
     background: var(--fg);
   }
 
-  /* make move in from the left */
+  /* TODO: not use position: absolute; */
   #menu {
     display: none;
-    /* transform: translate(-150%); */
-    /* transition: transform 0.5s ease-in-out; */
-    /* text-align: center; */
-    /* height: 100%; */
-    /* width: 100%; */
+    text-align: center;
+    height: 100%;
+    width: 100%;
     text-decoration: none;
     background-color: var(--bg);
-    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  }
+
+  #menu a {
+    font-size: xx-large;
   }
 
   input[type="checkbox"]:checked ~ #menu {
+    position: absolute;
     display: flex;
     flex-direction: column;
-    position: absolute;
-    top: 1px;
-    /* transform: translateX(0); */
+    top: 15%;
+    right: 0;
   }
 }

@@ -2,7 +2,7 @@
 
 /* TODO: reformat the html page */
 
-section {
+#container {
   margin: 0px 6rem;
   height: 60vh;
   display: flex;
@@ -11,7 +11,7 @@ section {
   justify-content: center;
 }
 
-section h1 {
+#container h1 {
   font-size: 52px;
   border-bottom: 1px dashed var(--fg);
   width: 50vw;
