@@ -1,7 +1,7 @@
 document.getElementById("navbar").innerHTML = `
     <header>
       <div>
-        <h1>saubuny</h1>
+	<h1>${document.title}</h1>
       </div>
       <input type="checkbox" id="menu-toggle" />
       <div id="hamburger-lines">
