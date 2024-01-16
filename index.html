@@ -1,6 +1,110 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
-    <meta http-equiv="refresh" content="0;URL=/pages/index.html" />
+    <title>saubuny</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/style.css" rel="stylesheet" />
   </head>
+  <style>
+    :root {
+      font-weight: 400;
+      line-height: 1.5;
+      font-size: large;
+
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+
+      font-family: sans-serif;
+      background-color: black;
+      color: white;
+    }
+
+    header {
+      margin: 0 1rem;
+      padding: 0 1rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 1px solid grey;
+
+      display: flex;
+      justify-content: space-between;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    header a {
+      margin-left: 1rem;
+    }
+
+    #container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 2rem 0;
+    }
+
+    #container > section {
+      width: 60%;
+    }
+
+    .card {
+      border: 1px solid grey;
+      margin: 1rem;
+      padding: 1rem;
+      position: relative;
+      top: 0;
+      transition: top ease 0.4s;
+    }
+
+    .card:hover {
+      top: -8px;
+    }
+
+    .card a {
+      font-size: x-large;
+    }
+
+    .card p {
+      color: grey;
+    }
+  </style>
+  <body>
+    <header>
+      <span>saubuny</span>
+      <nav>
+        <a href="https://github.com/saubuny" target="_blank">github</a>
+      </nav>
+    </header>
+    <div id="container">
+      <section id="about">
+        <h1>hi, im saubuny</h1>
+        <p>
+          i am an 18 year old developer planning on becomming a cs student soon!
+          i mainly focus on web development, but i am interested in most areas
+          of computer science.
+        </p>
+      </section>
+      <section id="projects">
+        <h1>projects</h1>
+        <div class="card">
+          <a
+            href="https://github.com/saubuny/saubuny.github.io"
+            target="_blank"
+          >
+            portfolio
+          </a>
+          <p>the website you are on right now</p>
+        </div>
+        <div class="card">
+          <a href="https://github.com/saubuny/minecraft-clone" target="_blank">
+            minecraft clone
+          </a>
+          <p>written in c and opengl</p>
+        </div>
+      </section>
+    </div>
+  </body>
 </html>
