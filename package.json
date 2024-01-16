@@ -1,7 +1,8 @@
 {
 	"name": "personal-website",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"css": "npx tailwindcss -i ./public/css/tw.css -o ./public/css/global.css --watch"
 	},
 	"license": "ISC",
 	"devDependencies": {
