@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+
+:root {
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: large;
+
+  font-family: "JetBrains Mono", sans-serif;
+  background-color: black;
+  color: white;
+}
+
+header {
+  margin: 0 1rem;
+  padding: 0 1rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid grey;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+header > div {
+  display: flex;
+}
+
+button {
+  color: inherit;
+  background: transparent;
+  outline: none;
+  border: none;
+  margin-left: 1rem;
+  padding: 0 0.5rem;
+  outline: 1px solid grey;
+}
+
+button:active {
+  background: grey;
+}
+
+a {
+  color: inherit;
+}
+
+header a {
+  margin-left: 1rem;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin: 2rem 0; */
+}
+
+#container > section {
+  width: 60%;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.card {
+  border: 1px solid grey;
+  /* margin: 1rem; */
+  padding: 1rem;
+  position: relative;
+  top: 0;
+  transition: top ease 0.2s;
+}
+
+.card:hover {
+  top: -4px;
+}
+
+.card a {
+  font-size: x-large;
+}
+
+.card p {
+  color: grey;
+}
+
+@media (max-width: 950px) {
+  #container > section {
+    width: 80%;
+  }
+
+  .card:hover {
+    top: 0;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
