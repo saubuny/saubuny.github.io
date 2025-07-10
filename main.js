@@ -1,7 +1,7 @@
 let projects = [
 	{
 		link: "https://github.com/saubuny/saubuny.github.io",
-		title: "portfolio",
+		title: "muh website",
 		desc: "the website you are on right now",
 	},
 ];
