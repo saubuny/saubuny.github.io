@@ -4,16 +4,6 @@ let projects = [
 		title: "portfolio",
 		desc: "the website you are on right now",
 	},
-	{
-		link: "https://github.com/saubuny/tuisic",
-		title: "tuisic",
-		desc: "a tui music player for linux",
-	},
-	{
-		link: "https://github.com/saubuny/chip8",
-		title: "chip8 emulator",
-		desc: "a semi-functional chip8 emulator/interpreter",
-	},
 ];
 
 const cards = document.querySelector(".cards");
