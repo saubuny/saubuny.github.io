@@ -4,6 +4,11 @@ let projects = [
 		title: "my website",
 		desc: "this boring thing",
 	},
+	{
+		link: "https://github.com/saubuny/goldshi",
+		title: "(wip) goldshi",
+		desc: "simple cli ppm image manipulation named after silly horse girl",
+	},
 ];
 
 const cards = document.querySelector(".cards");
