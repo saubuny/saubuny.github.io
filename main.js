@@ -1,8 +1,8 @@
 let projects = [
 	{
 		link: "https://github.com/saubuny/saubuny.github.io",
-		title: "muh website",
-		desc: "the website you are on right now",
+		title: "my website",
+		desc: "this boring thing",
 	},
 ];
 
@@ -16,30 +16,3 @@ for (let project of projects) {
             <p>${project.desc}</p>
         </div>`;
 }
-
-let darkMode = document.cookie
-	.split(";")
-	.some((item) => item.trim().includes("dark_mode=true"));
-
-const button = document.querySelector("button");
-const root = document.querySelector(":root");
-
-const changeTheme = () => {
-	if (darkMode) {
-		root.style.color = "#fbf1c7";
-		root.style.backgroundColor = "black";
-		button.innerHTML = "light";
-	} else {
-		root.style.color = "#282828";
-		root.style.backgroundColor = "white";
-		button.innerHTML = "dark";
-	}
-};
-
-const buttonHandler = () => {
-	darkMode = !darkMode;
-	changeTheme();
-	document.cookie = `dark_mode=${darkMode}`;
-};
-
-changeTheme();
