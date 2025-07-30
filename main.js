@@ -1,13 +1,13 @@
 let projects = [
 	{
+		link: "https://github.com/saubuny/goldshi",
+		title: "(wip) goldshi",
+		desc: "simple cli image manipulation named after silly horse girl",
+	},
+	{
 		link: "https://github.com/saubuny/saubuny.github.io",
 		title: "my website",
 		desc: "this boring thing",
-	},
-	{
-		link: "https://github.com/saubuny/goldshi",
-		title: "(wip) goldshi",
-		desc: "simple cli ppm image manipulation named after silly horse girl",
 	},
 ];
 
